@@ -1,0 +1,4 @@
+virtual/
+*.pyc
+*.pyc
+personalgallery/settings.py
