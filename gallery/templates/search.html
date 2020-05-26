@@ -10,7 +10,7 @@
         {% if images%}
         <h2>Found {{ images|length}} images for searched term {{message}}</h2>
         {% else %}
-        <h2>Found 0 articles for the search term {{message}}</h2>
+        <h2>No artcles found for the search term kindly input the listed terms {{message}}</h2>
         {% endif %}
         <div class="container imageloc">
             <form class="form" role="search" action="{% url 'search_image' %}">
@@ -18,7 +18,7 @@
                   <input type="text" class="form-control" placeholder="&#xf3ee; Search by category"name="image_category">
                   <br>
                  </div>
-                 <small>Trending searches: fashion, travel</small>
+                 <small>Trending searches:food, fashion & travel</small>
               </form>
         </div>
     </div>
@@ -83,10 +83,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <!-- <input class="form-control" type="text" value="{{image.image_link}}" id="link"> -->
-                        <button type="button" class="btn btn-secondary" onclick="copy('img{{image.id}}')">Copy Link</button>
-                       <!-- <a onclick="myFunction()"><button type="button"  class="btn btn-primary">Copy Link</button></a> -->
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" onclick="copy('img{{image.id}}')">Copy Link Address</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
                     </div>
                 </div>
             </div>
