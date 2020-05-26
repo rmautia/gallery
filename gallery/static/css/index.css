@@ -195,7 +195,7 @@ div.container.imageloc{
 .banner{
 background: url(../images/landing2.jpg) no-repeat 0px 0px;
 background-size:cover;
-background-position: ;
+background-position: relative;
 -webkit-background-size: cover;
 -o-background-size: cover;
 -ms-background-size: cover;
@@ -429,7 +429,7 @@ h5.modal-title{
         overflow: auto;
     }
     button.btn.btn-secondary{
-        /* display: none; */
+         display: none; 
     }
     h5#deleteModalLabel.modal-title{
         margin: 0px;
@@ -478,7 +478,7 @@ h5.modal-title{
         overflow: auto;
     }
     button.btn.btn-secondary{
-        /* display: none; */
+         display: none; 
     }
     h5#deleteModalLabel.modal-title{
         margin: 0px;
