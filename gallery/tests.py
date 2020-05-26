@@ -77,3 +77,18 @@ class ImageTestClass(TestCase):
         upimage = Image.objects.filter(id = self.image.id)
         print(upimage)
         self.assertTrue(Image.name == 'test update')
+
+
+class LocationTestCLass(TestCase):
+    #Set up Method
+    def setUp(self):
+        self.loc = Location(name="Africa")
+        self.loc.save_location()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.loc,Location))
+
+    def test_save_method(self):
+        self.loc.save_location()
+        locations = Location.objects.all()
+        self.assertTrue(len(locations) > 0)
