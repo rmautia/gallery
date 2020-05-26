@@ -48,4 +48,16 @@ class ImageTestClass(TestCase):
         self.image.delete_image()
         self.cat.delete_category()
         self.loc.delete_location()
-    
+    def test_save_method(self):
+        self.image.save_image()
+        images  = Image.objects.all()
+        self.assertTrue(len(images)>0)
+
+
+    def test_get_all_images(self):
+        images = Image.get_all_images()
+        self.assertTrue(len(images)>0)
+
+    def test_get_image_by_id(self):
+        images= Image.get_image_by_id(self.image.id)
+        self.assertTrue(len(images) == 1)
