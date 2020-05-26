@@ -28,4 +28,16 @@ class CategoryTestClass(TestCase):
         category.update_category('nature')
         category = Category.get_category_id(self.cat.id)
         self.assertTrue(category.name == 'nature')
+
+class ImageTestClass(TestCase):
+    # Set up Method
+    def setUp(self):
+        self.cat = Category(name="fashion")
+        self.cat.save_category()
+
+        self.loc = Location(name="urban")
+        self.loc.save_location()
+
+        self.image = Image(name='image test', description='my test',image_location=self.loc, image_category=self.cat)
+        self.image.save_image()
     
