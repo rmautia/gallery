@@ -40,4 +40,12 @@ class ImageTestClass(TestCase):
 
         self.image = Image(name='image test', description='my test',image_location=self.loc, image_category=self.cat)
         self.image.save_image()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.image, Image))
+
+    def tearDown(self):
+        self.image.delete_image()
+        self.cat.delete_category()
+        self.loc.delete_location()
     
