@@ -30,9 +30,10 @@
          <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                  <div class="portfolio-wrap ">
                      <div class="portfolio-wrap hovereffect">
-                         <a class="img-overlay" data-toggle="modal" data-target="#{{image.id}}" style="width:100%">
-                             <img src="{{image.picture.cdn_url}}" href="" class="image" alt="Image" >
-                             <div class="overlay">
+                         <a class="img-overlay" data-toggle="modal" data-target="#deleteModalLabel{{image.id}}" style="width:100%">
+                            <img  src="{{image.picture.cdn_url}}"  href="" class="image" alt="Image" data-toggle="modal" data-target="#deleteModalLabel{{image.id}}" style="width:100%" class="img-responsive" >
+
+                            <div class="overlay">
                                  <h4>{{image.name}}</h4>
                              </div>
                          </a>
@@ -53,11 +54,11 @@
 
     <!-- Looping through image details modal -->
     {% for image in images %}
-        <div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
-            <div class="modal-dialog-centered" role="document">
+        <div class="modal fade" id="deleteModalLabel{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabelTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="deleteModalLabel">Image Upload </h5>
+                        <h5 class="modal-title" id="deleteModalLabelLongTitle">Upclose view </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -80,10 +81,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <!-- <input class="form-control" type="text" value="{{image.image_link}}" id="link"> -->
-                        <button type="button" class="btn btn-secondary" onclick="copy('img{{image.id}}')">Copy Link</button>
-                       <!-- <a onclick="myFunction()"><button type="button"  class="btn btn-primary">Copy Link</button></a> -->
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" onclick="copy('img{{image.id}}')">Copy Link</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
