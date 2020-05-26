@@ -72,7 +72,7 @@ div.navbar-nav.ml-auto{
     z-index: 1050;
     top: 0;
     right: 0;
-    background-color: #000;
+    background-color: yellow;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 40px;
@@ -89,13 +89,13 @@ div.navbar-nav.ml-auto{
 }
 
 .nav-side h4 {
-    color: #d18a19;
+    color: black;
     padding: 0px 0px 0px 20px;
     font-size: 20px;
 }
 
 .nav-side a:hover {
-    color: #d18a19;
+    color: black;
 }
 
 .nav-side .close-nav {
@@ -191,9 +191,7 @@ div.container.imageloc{
     padding-top: 40px;
 }
 .banner{
-background: url(../images/landing2.jpg) no-repeat 0px 0px;
 background-size:cover;
-background-position: ;
 -webkit-background-size: cover;
 -o-background-size: cover;
 -ms-background-size: cover;
@@ -212,7 +210,6 @@ min-height: 400px;
     background: rgba(0,0,0,0.8)
 }
 .banner-1{
-background: url(../images/landing2.jpg) no-repeat 0px 0px;
 background-size:cover;
 background-position: center;
 -webkit-background-size: cover;
@@ -328,7 +325,7 @@ div.col-xs-6.col-sm-6.col-md-4.col-lg-3{
     position: relative;
     font-size: 15px;
     background-color: transparent;
-    color: #44c7f4;
+    color: yellow;
     margin-top: 2em;
     padding: 2em 2em;
     opacity: 0;
@@ -426,9 +423,7 @@ h5.modal-title{
         max-width: 150px;
         overflow: auto;
     }
-    button.btn.btn-secondary{
-        /* display: none; */
-    }
+
     h5#deleteModalLabel.modal-title{
         margin: 0px;
     }
@@ -474,9 +469,6 @@ h5.modal-title{
     input#link.form-control{
         max-width: 150px;
         overflow: auto;
-    }
-    button.btn.btn-secondary{
-        /* display: none; */
     }
     h5#deleteModalLabel.modal-title{
         margin: 0px;
