@@ -41,6 +41,8 @@ Create .env file and paste paste the following filling where appropriate:
 ## Built With
 Django=1.11.28
 python==3.8.2
+postgresql
+Heroku
 * [uploadcare](https://uploadcare.com/) - serverless image storage
  
 
