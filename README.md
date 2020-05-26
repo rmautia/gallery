@@ -7,13 +7,13 @@ create an empty folder in your computer. inside the folder open terminal and;
 - git clone https://github.com/rmautia/gallery.git
 - cd into gallery
 - pip install -r requirements.txt
-Create .env file and paste paste the following filling where appropriate:
+## Create .env file and paste paste the following filling where appropriate;
 
-    SECRET_KEY = '<Secret_key>'
-    DBNAME = 'gallery'
-    USER = '<Username>'
-    PASSWORD = '<password>'
-    DEBUG = True
+-SECRET_KEY = '<Secret_key>'
+-DBNAME = 'gallery'
+-USER = '<Username>'
+-PASSWORD = '<password>'
+-DEBUG = True
 #### Run initial Migration
     python3.8 manage.py makemigrations gallery
     python3.8 manage.py migrate
@@ -63,7 +63,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* Hat tip to those whose code was reffered from.
 * uploadcare quickstart
 * NJmirage dropbox
 
