@@ -16,5 +16,10 @@ class CategoryTestClass(TestCase):
         self.cat.save_category()
         category = Category.objects.all()
         self.assertTrue(len(category) > 0)
-
+        
+    def test_delete_method(self):
+        self.cat.save_category()
+        self.cat.delete_category()
+        category = Category.objects.all()
+        self.assertTrue(len(category) == 0)
     
