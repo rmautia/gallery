@@ -20,7 +20,7 @@ def single(request,category_name,image_id):
         image = Image.objects.get(id = image_id)
     except DoesNotExist:
         raise Http404()
-    return render(request,"single.html",{'title':title,"image":image, "locations":locations, "image_category":image_category})
+    return render(request,"single_image.html",{'title':title,"image":image, "locations":locations, "image_category":image_category})
 
 def search_image(request):
     title = 'Search'

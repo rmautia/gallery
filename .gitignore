@@ -1,6 +1,9 @@
 virtual/
-.env
 personalgallery/settings.py 
+.env
+
+
+
 
 
 
