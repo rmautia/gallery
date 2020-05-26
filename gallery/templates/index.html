@@ -17,9 +17,9 @@
         </div>
     </div>
 </div>
+<hr>
 
-
-<div class="container wrap">
+<div class="container-fluid" style="background-color: grey;">
     <!-- Looping through images -->
     <div class="row" id="gallery">
     {% for image in images %}
@@ -54,7 +54,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="deleteModalLabel">Picture Post</h5>
+                        <h5 class="modal-title" id="deleteModalLabel">Enhanced View</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -79,9 +79,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" onclick="copy('img{{image.id}}')">Copy Image Link</button>
-                        <!-- <input class="form-control" type="text" value="{{image.image_link}}" id="link">
-                       <a onclick="myFunction()"><button type="button"  class="btn btn-primary">Copy Link</button></a> -->
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close view</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
                     </div>
                 </div>
             </div>
