@@ -70,3 +70,10 @@ class ImageTestClass(TestCase):
         images = Image.fil0ter_by_location('1')
         print(images)
         self.assertTrue(len(images)>0)
+
+    def test_update_image(self):
+        self.image.save_image()
+        image = Image.update_image( self.image.id, 'test update', 'my test',self.loc, self.cat)
+        upimage = Image.objects.filter(id = self.image.id)
+        print(upimage)
+        self.assertTrue(Image.name == 'test update')
