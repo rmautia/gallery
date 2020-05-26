@@ -82,7 +82,7 @@ class ImageTestClass(TestCase):
 class LocationTestCLass(TestCase):
     #Set up Method
     def setUp(self):
-        self.loc = Location(name="Africa")
+        self.loc = Location(name="Urban")
         self.loc.save_location()
 
     def test_instance(self):
@@ -92,3 +92,9 @@ class LocationTestCLass(TestCase):
         self.loc.save_location()
         locations = Location.objects.all()
         self.assertTrue(len(locations) > 0)
+
+    def test_delete_method(self):
+        self.loc.save_location()
+        self.loc.delete_location()
+        location = Location.objects.all()
+        self.assertTrue(len(location) == 0)
