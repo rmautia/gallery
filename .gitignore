@@ -1,6 +1,9 @@
 virtual/
 *.pyc
 .env
+venv/
+personalgallery/settings.py
+
 
 
 
